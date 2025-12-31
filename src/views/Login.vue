@@ -7,8 +7,7 @@
 
 <script setup>
 const login = () => {
-  const jumpUrl = import.meta.env.VITE_API_LOGIN_JUMP_URL
-  window.location.href = `${jumpUrl}/v1/auth/login`
+  window.location.href = import.meta.env.VITE_API_REDIECT_URL + '/api/v1/auth/login'
 }
 </script>
 

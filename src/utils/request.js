@@ -1,5 +1,7 @@
 import axios from 'axios'
 
+console.log('API BASE:', import.meta.env.VITE_API_BASE_URL)
+
 const request = axios.create({
   // import.meta.env 是 Vite 提供的获取环境变量的方式
   baseURL: import.meta.env.VITE_API_BASE_URL,
